@@ -31,6 +31,7 @@ namespace proyectoef
                 tarea.Property(t => t.Descripcion).HasMaxLength(500);
                 tarea.Property(t => t.PrioridadTarea).IsRequired();
                 tarea.Property(t => t.FechaCreacion);
+                tarea.Ignore(t => t.Resumen);
 
             });
         }
